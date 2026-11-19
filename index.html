@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adnan SK | Executive Advisory, Private Capital & Corporate Strategy</title>
+  <meta name="description" content="Adnan SK (adnansk.ca) — Bespoke corporate consulting, cross-border M&A strategy, family office advisory, and AI governance for principals, boards, and ultra-high-net-worth enterprises in Toronto and globally." />
+  <link rel="canonical" href="https://adnansk.ca/" />
+
+  <!-- Editorial Luxury Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN & Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-obsidian text-alabaster font-sans antialiased selection:bg-champagne/30 selection:text-alabaster relative">
+
+  <!-- Ambient Cursor Aura -->
+  <div id="cursor-aura" class="hidden lg:block" aria-hidden="true"></div>
+
+  <!-- Top Discreet Ledger Bar Preserving Official Domains & Direct Channels -->
+  <div class="border-b hairline-subtle bg-[#070709] text-[11px] tracking-wider text-stoneMuted relative z-30">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-2.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 text-alabaster/90 uppercase tracking-widestLuxury text-[10px]">
+          <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
+          Toronto &bull; New York &bull; London
+        </span>
+        <span class="text-white/15 hidden sm:inline">|</span>
+        <a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">
+          adnansk.ca
+        </a>
+        <span class="text-white/15 hidden md:inline">|</span>
+        <a href="https://northstreet.adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hidden md:inline hover:text-champagne transition-colors">
+          northstreet.adnansk.ca
+        </a>
+      </div>
+
+      <div class="flex items-center gap-5">
+        <a href="tel:+16478751381" class="hover:text-alabaster transition-colors">
+          +1 (647) 875-1381
+        </a>
+        <span class="text-white/15 hidden sm:inline">|</span>
+        <a href="mailto:adnan@adnansk.ca" class="hidden sm:inline hover:text-champagne transition-colors">
+          adnan@adnansk.ca
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Minimalist Luxury Header -->
+  <header class="sticky top-0 z-40 luxury-nav border-b hairline transition-all">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 h-20 flex items-center justify-between gap-6">
+      <!-- Monogram & Wordmark -->
+      <a href="https://adnansk.ca/" class="flex items-center gap-3.5 group focus:outline-none">
+        <div class="w-10 h-10 rounded-lg border hairline bg-charcoal flex items-center justify-center font-serif text-xl font-semibold tracking-wider text-champagne group-hover:bg-champagne group-hover:text-obsidian transition-all duration-300">
+          AS
+        </div>
+        <div>
+          <span class="block font-serif text-xl sm:text-2xl font-semibold tracking-wide text-alabaster leading-none">
+            Adnan SK
+          </span>
+          <span class="block text-[10px] uppercase tracking-widestLuxury text-stoneMuted mt-1">
+            Principal Advisory
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-widest text-stoneMuted">
+        <a href="https://adnansk.ca/#advisory" data-scroll="#advisory" class="nav-anchor hover:text-champagne transition-colors py-2">
+          Advisory Mandates
+        </a>
+        <a href="https://adnansk.ca/#engagements" data-scroll="#engagements" class="nav-anchor hover:text-champagne transition-colors py-2">
+          Selected Engagements
+        </a>
+        <a href="https://adnansk.ca/#insights" data-scroll="#insights" class="nav-anchor hover:text-champagne transition-colors py-2">
+          Executive Briefs
+        </a>
+        <a href="https://adnansk.ca/#principals" data-scroll="#principals" class="nav-anchor hover:text-champagne transition-colors py-2">
+          Governance &amp; Ventures
+        </a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-3">
+        <!-- Dossier Shortlist Indicator -->
+        <button id="open-dossier-btn" type="button" aria-label="View Advisory Dossier" class="relative px-3.5 py-2.5 rounded-lg border hairline-subtle bg-charcoal/80 hover:border-champagne/60 text-xs tracking-wider uppercase text-alabaster/90 transition-all flex items-center gap-2">
+          <span class="hidden sm:inline">Mandate Dossier</span>
+          <svg class="w-4 h-4 text-champagne" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+          </svg>
+          <span id="dossier-count" class="hidden min-w-[18px] h-[18px] px-1 rounded-full bg-champagne text-obsidian text-[10px] font-semibold flex items-center justify-center">0</span>
+        </button>
+
+        <!-- Private Briefing Modal Trigger -->
+        <button id="open-briefing-modal-btn" type="button" class="hidden sm:inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest hover:bg-champagneLight transition-all duration-300">
+          <span>Request Private Briefing</span>
+        </button>
+
+        <!-- Mobile Drawer Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation" aria-expanded="false" class="lg:hidden p-2.5 rounded-lg border hairline-subtle bg-charcoal text-alabaster">
+          <svg id="icon-menu-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/></svg>
+          <svg id="icon-menu-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-drawer" class="hidden lg:hidden border-t hairline bg-obsidian px-6 pt-5 pb-8 space-y-4">
+      <div class="flex flex-col space-y-3 text-sm uppercase tracking-widest text-stoneMuted">
+        <a href="https://adnansk.ca/#advisory" data-scroll="#advisory" class="mobile-nav-link py-2 hover:text-champagne">Advisory Mandates</a>
+        <a href="https://adnansk.ca/#engagements" data-scroll="#engagements" class="mobile-nav-link py-2 hover:text-champagne">Selected Engagements</a>
+        <a href="https://adnansk.ca/#insights" data-scroll="#insights" class="mobile-nav-link py-2 hover:text-champagne">Executive Briefs</a>
+        <a href="https://adnansk.ca/#principals" data-scroll="#principals" class="mobile-nav-link py-2 hover:text-champagne">Governance &amp; Ventures</a>
+      </div>
+      <div class="pt-4 border-t hairline-subtle flex flex-col gap-3">
+        <button type="button" id="mobile-briefing-trigger" class="w-full py-3 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest">
+          Request Private Briefing
+        </button>
+        <div class="flex items-center justify-between text-xs text-stoneMuted pt-2">
+          <a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne">adnansk.ca &nearr;</a>
+          <a href="https://northstreet.adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne">North Street &nearr;</a>
+          <a href="https://northcanada.square.site/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne">Retainer Portal &nearr;</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative z-10">
+
+    <!-- Hero Section -->
+    <section id="top" class="obsidian-vignette border-b hairline relative">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-28 lg:pb-32">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+          <!-- Left Editorial Statement -->
+          <div class="lg:col-span-7 space-y-8">
+            <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border hairline bg-charcoal/70 text-[11px] uppercase tracking-widestLuxury text-champagne">
+              <span>Discreet Counsel for Principals &amp; Boards</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-[4.25rem] font-normal tracking-tight text-alabaster leading-[1.08]">
+              Quiet authority in <span class="italic text-champagne">sovereign strategy</span>, capital architecture &amp; enterprise transformation.
+            </h1>
+
+            <p class="text-base sm:text-lg text-stoneMuted font-light leading-relaxed max-w-2xl">
+              Adnan SK advises ultra-high-net-worth principals, single-family offices, and institutional boards on cross-border M&amp;A positioning, high-velocity revenue architecture, and executive AI governance—operating with strict confidentiality from Toronto.
+            </p>
+
+            <!-- Primary CTA & Direct Official Links -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <button type="button" id="hero-briefing-btn" class="px-7 py-3.5 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest hover:bg-champagneLight transition-all duration-300">
+                Schedule Confidential Consultation
+              </button>
+              <a href="https://adnansk.ca/#engagements" data-scroll="#engagements" class="nav-anchor px-6 py-3.5 rounded-lg border hairline bg-charcoal/50 hover:border-champagne text-alabaster text-xs uppercase tracking-widest transition-all">
+                Examine Track Record
+              </a>
+            </div>
+
+            <!-- Intact Social & Official Network Links -->
+            <div class="pt-6 border-t hairline-subtle flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-stoneMuted">
+              <span class="uppercase tracking-widest text-[10px] text-champagne/90">Verified Channels:</span>
+              <a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-alabaster transition-colors underline decoration-champagne/40 underline-offset-4">adnansk.ca</a>
+              <a href="https://northstreet.adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-alabaster transition-colors underline decoration-champagne/40 underline-offset-4">northstreet.adnansk.ca</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-champagne transition-colors inline-flex items-center gap-1">
+                <span>LinkedIn</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" class="hover:text-champagne transition-colors inline-flex items-center gap-1">
+                <span>X / Twitter</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-champagne transition-colors inline-flex items-center gap-1">
+                <span>GitHub</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+              <a href="https://northcanada.square.site/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors inline-flex items-center gap-1">
+                <span>Retainer Portal</span>
+                <span class="text-[10px]">&nearr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Executive Dossier Card -->
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl border hairline bg-charcoal/90 p-7 sm:p-9 relative">
+              <div class="flex items-center justify-between pb-5 border-b hairline-subtle">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widestLuxury text-champagne block">Principal Profile</span>
+                  <h2 class="font-serif text-2xl text-alabaster mt-1">Adnan SK</h2>
+                </div>
+                <span class="px-3 py-1 rounded-full border hairline text-[10px] uppercase tracking-widest text-stoneMuted">
+                  Est. 2006
+                </span>
+              </div>
+
+              <p class="mt-5 text-sm text-stoneMuted font-light leading-relaxed">
+                Two decades structuring commercial turnarounds, multi-outlet hospitality expansions, financial &amp; telecom acquisition engines, and Canadian media ventures.
+              </p>
+
+              <!-- Discreet Key Figures -->
+              <div class="mt-7 grid grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl border hairline-subtle bg-obsidian/70">
+                  <span class="font-serif text-3xl text-champagne block">$450M+</span>
+                  <span class="text-[11px] uppercase tracking-wider text-stoneMuted mt-1 block">Enterprise Value Advised</span>
+                </div>
+                <div class="p-4 rounded-xl border hairline-subtle bg-obsidian/70">
+                  <span class="font-serif text-3xl text-alabaster block">20+ Yrs</span>
+                  <span class="text-[11px] uppercase tracking-wider text-stoneMuted mt-1 block">Principal Counsel</span>
+                </div>
+                <div class="p-4 rounded-xl border hairline-subtle bg-obsidian/70">
+                  <span class="font-serif text-3xl text-alabaster block">+$90K/mo</span>
+                  <span class="text-[11px] uppercase tracking-wider text-stoneMuted mt-1 block">90-Day Yield Velocity</span>
+                </div>
+                <div class="p-4 rounded-xl border hairline-subtle bg-obsidian/70">
+                  <span class="font-serif text-3xl text-champagne block">100%</span>
+                  <span class="text-[11px] uppercase tracking-wider text-stoneMuted mt-1 block">NDA &amp; Principal Discretion</span>
+                </div>
+              </div>
+
+              <div class="mt-7 pt-5 border-t hairline-subtle flex items-center justify-between text-xs">
+                <a href="mailto:adnan@adnansk.ca" class="text-alabaster hover:text-champagne transition-colors">
+                  adnan@adnansk.ca
+                </a>
+                <a href="mailto:north.street@northmail.ca" class="text-stoneMuted hover:text-champagne transition-colors">
+                  north.street@northmail.ca
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Advisory Pillar & Retainer Tier Explorer -->
+    <section id="advisory" class="py-20 sm:py-28 border-b hairline bg-obsidian reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="max-w-3xl">
+          <span class="text-[11px] uppercase tracking-widestLuxury text-champagne">Practice Areas &amp; Retainer Architecture</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-alabaster mt-3 leading-tight">
+            Bespoke mandates engineered for asymmetric advantage.
+          </h2>
+          <p class="mt-4 text-stoneMuted text-sm sm:text-base font-light leading-relaxed">
+            Select an advisory pillar below to inspect engagement scope, governance cadence, and retainer structure. Add mandates directly to your confidential briefing dossier.
+          </p>
+        </div>
+
+        <!-- Interactive Pillar Split View -->
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Left Selector Tabs -->
+          <div id="pillar-tabs" class="lg:col-span-5 space-y-3">
+            <!-- Rendered via JS -->
+          </div>
+
+          <!-- Right Dynamic Detail Panel -->
+          <div class="lg:col-span-7">
+            <div id="pillar-detail-panel" class="rounded-2xl border hairline bg-charcoal p-7 sm:p-10 transition-all">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Engagements / Case Studies (Filterable + Modal Drawer) -->
+    <section id="engagements" class="py-20 sm:py-28 border-b hairline bg-[#08080A] reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <span class="text-[11px] uppercase tracking-widestLuxury text-champagne">Selected Engagements (2006 – Present)</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-alabaster mt-3 leading-tight">
+              Measured outcomes across private &amp; institutional capital.
+            </h2>
+          </div>
+
+          <!-- Discreet Domain Filter Pills -->
+          <div id="engagement-filters" class="flex flex-wrap items-center gap-2">
+            <button type="button" data-cat="all" class="eng-filter-btn active px-4 py-2 rounded-lg border hairline bg-champagne text-obsidian text-xs font-medium uppercase tracking-wider transition-all">
+              All Mandates
+            </button>
+            <button type="button" data-cat="capital" class="eng-filter-btn px-4 py-2 rounded-lg border hairline-subtle bg-charcoal text-stoneMuted hover:text-alabaster text-xs uppercase tracking-wider transition-all">
+              Capital &amp; M&amp;A
+            </button>
+            <button type="button" data-cat="growth" class="eng-filter-btn px-4 py-2 rounded-lg border hairline-subtle bg-charcoal text-stoneMuted hover:text-alabaster text-xs uppercase tracking-wider transition-all">
+              Enterprise Growth
+            </button>
+            <button type="button" data-cat="ventures" class="eng-filter-btn px-4 py-2 rounded-lg border hairline-subtle bg-charcoal text-stoneMuted hover:text-alabaster text-xs uppercase tracking-wider transition-all">
+              Media &amp; Hospitality
+            </button>
+          </div>
+        </div>
+
+        <!-- Engagements Grid -->
+        <div id="engagements-grid" class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Briefs / Insights Section -->
+    <section id="insights" class="py-20 sm:py-28 border-b hairline bg-obsidian reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <span class="text-[11px] uppercase tracking-widestLuxury text-champagne">Executive Briefs &amp; Memoranda</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-alabaster mt-3 leading-tight">
+              Perspectives on capital preservation, organic authority &amp; AI governance.
+            </h2>
+          </div>
+          <a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="text-xs uppercase tracking-widest text-champagne hover:text-champagneLight transition-colors inline-flex items-center gap-2">
+            <span>Full Archive on adnansk.ca</span>
+            <span>&nearr;</span>
+          </a>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="rounded-2xl border hairline-subtle hover:border-champagne/50 bg-charcoal/60 p-7 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-stoneMuted uppercase tracking-wider">
+                <span>Memorandum I</span>
+                <span>Family Office Strategy</span>
+              </div>
+              <h3 class="font-serif text-2xl text-alabaster mt-4 group-hover:text-champagne transition-colors">
+                Structuring Direct Operating Acquisitions for Multi-Generational Principals
+              </h3>
+              <p class="mt-3 text-sm text-stoneMuted font-light leading-relaxed">
+                Why family offices outperform passive syndicates when deploying operational turnaround playbooks into cash-generative North American enterprises.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t hairline-subtle flex items-center justify-between">
+              <button type="button" onclick="openInsightReader(0)" class="text-xs uppercase tracking-widest text-champagne hover:text-champagneLight">
+                Read Brief &rarr;
+              </button>
+              <span class="text-[11px] text-stoneMuted">6 min read</span>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border hairline-subtle hover:border-champagne/50 bg-charcoal/60 p-7 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-stoneMuted uppercase tracking-wider">
+                <span>Memorandum II</span>
+                <span>AI &amp; Board Governance</span>
+              </div>
+              <h3 class="font-serif text-2xl text-alabaster mt-4 group-hover:text-champagne transition-colors">
+                Sovereign AI Infrastructure &amp; Fiduciary Risk in Private Enterprise
+              </h3>
+              <p class="mt-3 text-sm text-stoneMuted font-light leading-relaxed">
+                A board-level framework for deploying proprietary intelligence models without compromising intellectual property, client confidentiality, or regulatory standing.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t hairline-subtle flex items-center justify-between">
+              <button type="button" onclick="openInsightReader(1)" class="text-xs uppercase tracking-widest text-champagne hover:text-champagneLight">
+                Read Brief &rarr;
+              </button>
+              <span class="text-[11px] text-stoneMuted">8 min read</span>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border hairline-subtle hover:border-champagne/50 bg-charcoal/60 p-7 flex flex-col justify-between transition-all group">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-stoneMuted uppercase tracking-wider">
+                <span>Memorandum III</span>
+                <span>North Street Doctrine</span>
+              </div>
+              <h3 class="font-serif text-2xl text-alabaster mt-4 group-hover:text-champagne transition-colors">
+                Organic, Power, Serve: Turning Asymmetric Bottlenecks into Enduring Brand Equity
+              </h3>
+              <p class="mt-3 text-sm text-stoneMuted font-light leading-relaxed">
+                How human-centric brand positioning and precision funnel architecture unlock immediate liquidity and multi-location scalability.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t hairline-subtle flex items-center justify-between">
+              <button type="button" onclick="openInsightReader(2)" class="text-xs uppercase tracking-widest text-champagne hover:text-champagneLight">
+                Read Brief &rarr;
+              </button>
+              <span class="text-[11px] text-stoneMuted">5 min read</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Governance, North Street Media Limited & Official Portals -->
+    <section id="principals" class="py-20 sm:py-28 bg-[#08080A] reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-[11px] uppercase tracking-widestLuxury text-champagne">Operating Entities &amp; Governance</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-normal text-alabaster leading-tight">
+              Institutional rigor backed by direct principal accountability.
+            </h2>
+            <p class="text-sm sm:text-base text-stoneMuted font-light leading-relaxed">
+              Advisory engagements and strategic growth mandates are executed through <strong class="text-alabaster font-medium">Adnan SK</strong> and <strong class="text-alabaster font-medium">North Street Media Limited</strong> in Toronto, Ontario. Every engagement is governed by clear contractual deliverables, electronic execution protocols, and strict non-disclosure standards.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-5 rounded-xl border hairline-subtle bg-charcoal/70">
+                <span class="text-[10px] uppercase tracking-widest text-champagne block">Electronic Execution</span>
+                <p class="text-xs text-stoneMuted mt-2 leading-relaxed">
+                  All strategic deliverables, digital media architectures, and board memoranda are delivered electronically under agreed contractual milestones.
+                </p>
+              </div>
+              <div class="p-5 rounded-xl border hairline-subtle bg-charcoal/70">
+                <span class="text-[10px] uppercase tracking-widest text-champagne block">Retainer Continuity</span>
+                <p class="text-xs text-stoneMuted mt-2 leading-relaxed">
+                  Retainers operate on a pro-rated basis with a 45-day written notice standard to guarantee seamless transition and preservation of institutional knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Ecosystem & Direct Channels Card -->
+          <div class="lg:col-span-6">
+            <div class="rounded-2xl border hairline bg-charcoal p-7 sm:p-9 space-y-6">
+              <div class="flex items-center justify-between border-b hairline-subtle pb-4">
+                <h3 class="font-serif text-2xl text-alabaster">Official Network &amp; Direct Dispatch</h3>
+                <span class="text-[11px] uppercase tracking-widest text-champagne">Toronto, ON</span>
+              </div>
+
+              <div class="space-y-3 text-sm">
+                <a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl border hairline-subtle hover:border-champagne/60 bg-obsidian/60 transition-all">
+                  <div>
+                    <span class="block text-alabaster font-medium">Executive Advisory Hub</span>
+                    <span class="block text-xs text-stoneMuted">https://adnansk.ca/</span>
+                  </div>
+                  <span class="text-champagne text-xs uppercase tracking-widest">Visit &nearr;</span>
+                </a>
+
+                <a href="https://northstreet.adnansk.ca/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl border hairline-subtle hover:border-champagne/60 bg-obsidian/60 transition-all">
+                  <div>
+                    <span class="block text-alabaster font-medium">North Street Media Limited</span>
+                    <span class="block text-xs text-stoneMuted">https://northstreet.adnansk.ca/</span>
+                  </div>
+                  <span class="text-champagne text-xs uppercase tracking-widest">Visit &nearr;</span>
+                </a>
+
+                <a href="https://northcanada.square.site/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl border hairline-subtle hover:border-champagne/60 bg-obsidian/60 transition-all">
+                  <div>
+                    <span class="block text-alabaster font-medium">Verified Retainer &amp; Settlement Portal</span>
+                    <span class="block text-xs text-stoneMuted">https://northcanada.square.site/</span>
+                  </div>
+                  <span class="text-champagne text-xs uppercase tracking-widest">Portal &nearr;</span>
+                </a>
+              </div>
+
+              <div class="pt-4 border-t hairline-subtle flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <span class="block text-[10px] uppercase tracking-widest text-stoneMuted">Private Desk</span>
+                  <a href="tel:+16478751381" class="text-sm text-alabaster hover:text-champagne transition-colors">+1-647-875-1381</a>
+                </div>
+                <button type="button" id="footer-card-briefing-btn" class="px-5 py-2.5 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest hover:bg-champagneLight transition-colors">
+                  Initiate Private Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Luxury Footer Preserving All Links Intact -->
+  <footer class="bg-[#060608] border-t hairline text-stoneMuted relative z-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b hairline-subtle">
+        
+        <!-- Identity -->
+        <div class="space-y-4">
+          <a href="https://adnansk.ca/" class="inline-flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg border hairline bg-charcoal flex items-center justify-center font-serif text-lg text-champagne">AS</div>
+            <span class="font-serif text-xl text-alabaster tracking-wide">Adnan SK</span>
+          </a>
+          <p class="text-xs text-stoneMuted font-light leading-relaxed">
+            Bespoke corporate advisory, private capital strategy, and enterprise transformation for principals, family offices, and boards.
+          </p>
+          <p class="text-[11px] uppercase tracking-widest text-champagne/80">
+            Toronto, Ontario, Canada
+          </p>
+        </div>
+
+        <!-- Canonical & Ecosystem Links -->
+        <div>
+          <h4 class="text-[11px] uppercase tracking-widestLuxury text-alabaster mb-4">Official Domains</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">https://adnansk.ca/</a></li>
+            <li><a href="https://northstreet.adnansk.ca/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">https://northstreet.adnansk.ca/</a></li>
+            <li><a href="https://northcanada.square.site/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">https://northcanada.square.site/</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation & Social Profiles -->
+        <div>
+          <h4 class="text-[11px] uppercase tracking-widestLuxury text-alabaster mb-4">Navigation &amp; Profiles</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="https://adnansk.ca/#advisory" data-scroll="#advisory" class="nav-anchor hover:text-champagne transition-colors">Advisory Mandates</a></li>
+            <li><a href="https://adnansk.ca/#engagements" data-scroll="#engagements" class="nav-anchor hover:text-champagne transition-colors">Selected Engagements</a></li>
+            <li><a href="https://adnansk.ca/#insights" data-scroll="#insights" class="nav-anchor hover:text-champagne transition-colors">Executive Briefs</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">LinkedIn &nearr;</a></li>
+            <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">Twitter / X &nearr;</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">GitHub &nearr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div>
+          <h4 class="text-[11px] uppercase tracking-widestLuxury text-alabaster mb-4">Direct Correspondence</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="mailto:adnan@adnansk.ca" class="hover:text-champagne transition-colors">adnan@adnansk.ca</a></li>
+            <li><a href="mailto:north.street@northmail.ca" class="hover:text-champagne transition-colors">north.street@northmail.ca</a></li>
+            <li><a href="tel:+16478751381" class="hover:text-champagne transition-colors">+1-647-875-1381</a></li>
+          </ul>
+          <div class="mt-5 pt-4 border-t hairline-subtle">
+            <button type="button" id="footer-privacy-btn" class="text-[11px] text-stoneMuted hover:text-champagne underline underline-offset-4">
+              Confidentiality &amp; Privacy Notice
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stoneMuted">
+        <p>&copy; 2026 Adnan SK &bull; North Street Media Limited. All rights reserved.</p>
+        <p class="uppercase tracking-widest text-[10px]">Strict Principal Discretion</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Case Study / Engagement Detail Slide-Over Drawer -->
+  <div id="engagement-drawer-backdrop" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden transition-opacity">
+    <div id="engagement-drawer" class="fixed right-0 top-0 bottom-0 w-full max-w-xl bg-charcoal border-l hairline p-7 sm:p-10 flex flex-col justify-between overflow-y-auto">
+      <div id="engagement-drawer-content">
+        <!-- Populated dynamically -->
+      </div>
+      <div class="pt-6 border-t hairline-subtle flex flex-wrap items-center justify-between gap-3">
+        <button type="button" id="drawer-request-similar-btn" class="px-5 py-3 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest hover:bg-champagneLight transition-colors">
+          Request Similar Mandate
+        </button>
+        <button type="button" id="close-engagement-drawer" class="px-4 py-3 rounded-lg border hairline-subtle text-xs uppercase tracking-widest text-stoneMuted hover:text-alabaster">
+          Close Dossier
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mandate Dossier Slide-Over Drawer -->
+  <div id="dossier-drawer-backdrop" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden">
+    <div class="fixed right-0 top-0 bottom-0 w-full max-w-md bg-charcoal border-l hairline p-7 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b hairline-subtle">
+          <div>
+            <span class="text-[10px] uppercase tracking-widestLuxury text-champagne">Confidential Selection</span>
+            <h3 class="font-serif text-2xl text-alabaster mt-0.5">Mandate Dossier</h3>
+          </div>
+          <button type="button" id="close-dossier-btn" class="p-2 rounded-lg hover:bg-obsidian text-stoneMuted hover:text-alabaster">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div id="dossier-items-list" class="mt-6 space-y-3">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="pt-6 border-t hairline-subtle space-y-3">
+        <button type="button" id="dossier-to-briefing-btn" class="w-full py-3.5 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest hover:bg-champagneLight transition-colors">
+          Proceed to Private Briefing Request
+        </button>
+        <a href="https://northcanada.square.site/" target="_blank" rel="noopener noreferrer" class="block text-center w-full py-3 rounded-lg border hairline text-xs uppercase tracking-widest text-alabaster hover:border-champagne transition-colors">
+          Direct Retainer Settlement &nearr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Private Briefing / Consultation Request Modal -->
+  <div id="briefing-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-charcoal border hairline rounded-2xl max-w-xl w-full p-7 sm:p-10 shadow-2xl relative my-8">
+      <div class="flex items-start justify-between pb-5 border-b hairline-subtle">
+        <div>
+          <span class="text-[10px] uppercase tracking-widestLuxury text-champagne">Discreet Intake Protocol</span>
+          <h3 class="font-serif text-3xl text-alabaster mt-1">Request a Private Briefing</h3>
+        </div>
+        <button type="button" id="close-briefing-modal" class="p-2 rounded-lg hover:bg-obsidian text-stoneMuted hover:text-alabaster">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <form id="briefing-form" class="mt-6 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="bf-name" class="block text-[11px] uppercase tracking-widest text-stoneMuted mb-1.5">Principal / Executive Name *</label>
+            <input type="text" id="bf-name" required placeholder="Jonathan Sterling" class="w-full px-4 py-3 rounded-lg bg-obsidian border hairline-subtle text-sm text-alabaster focus:outline-none focus:border-champagne" />
+          </div>
+          <div>
+            <label for="bf-email" class="block text-[11px] uppercase tracking-widest text-stoneMuted mb-1.5">Private Email *</label>
+            <input type="email" id="bf-email" required placeholder="j.sterling@sterlingfamilyoffice.com" class="w-full px-4 py-3 rounded-lg bg-obsidian border hairline-subtle text-sm text-alabaster focus:outline-none focus:border-champagne" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="bf-org" class="block text-[11px] uppercase tracking-widest text-stoneMuted mb-1.5">Organization / Family Office *</label>
+            <input type="text" id="bf-org" required placeholder="Sterling Capital Holdings" class="w-full px-4 py-3 rounded-lg bg-obsidian border hairline-subtle text-sm text-alabaster focus:outline-none focus:border-champagne" />
+          </div>
+          <div>
+            <label for="bf-tier" class="block text-[11px] uppercase tracking-widest text-stoneMuted mb-1.5">AUM / Enterprise Revenue Tier</label>
+            <select id="bf-tier" class="w-full px-4 py-3 rounded-lg bg-obsidian border hairline-subtle text-sm text-alabaster focus:outline-none focus:border-champagne">
+              <option value="$25M – $100M">$25M – $100M</option>
+              <option value="$100M – $500M" selected>$100M – $500M</option>
+              <option value="$500M – $1B+">$500M – $1B+</option>
+              <option value="Single Family Office / Principal">Single Family Office / Principal</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="bf-focus" class="block text-[11px] uppercase tracking-widest text-stoneMuted mb-1.5">Advisory Mandate Focus</label>
+          <select id="bf-focus" class="w-full px-4 py-3 rounded-lg bg-obsidian border hairline-subtle text-sm text-alabaster focus:outline-none focus:border-champagne">
+            <option value="Executive Strategy & Cross-Border M&A">Executive Strategy &amp; Cross-Border M&amp;A</option>
+            <option value="Private Capital & Family Office Advisory">Private Capital &amp; Family Office Advisory</option>
+            <option value="Digital Transformation & AI Governance">Digital Transformation &amp; AI Governance</option>
+            <option value="High-Velocity Commercial & Hospitality Scaling">High-Velocity Commercial &amp; Hospitality Scaling</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bf-notes" class="block text-[11px] uppercase tracking-widest text-stoneMuted mb-1.5">Confidential Context &amp; Preferred Timing *</label>
+          <textarea id="bf-notes" rows="3" required placeholder="Outline strategic objectives, transaction timeline, or NDA requirements..." class="w-full px-4 py-3 rounded-lg bg-obsidian border hairline-subtle text-sm text-alabaster focus:outline-none focus:border-champagne"></textarea>
+        </div>
+
+        <div class="pt-2 flex flex-wrap items-center justify-between gap-4">
+          <button type="submit" class="w-full sm:w-auto px-7 py-3.5 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest hover:bg-champagneLight transition-colors">
+            Transmit Briefing Request
+          </button>
+          <a id="bf-direct-mailto" href="mailto:adnan@adnansk.ca?subject=Confidential%20Executive%20Briefing" class="text-xs text-stoneMuted hover:text-champagne underline underline-offset-4">
+            Or dispatch directly via PGP / Email &nearr;
+          </a>
+        </div>
+
+        <!-- Instant Confirmation Banner -->
+        <div id="briefing-confirmation" class="hidden rounded-xl border hairline bg-obsidian p-4 text-xs text-alabaster space-y-1.5">
+          <p class="text-champagne font-semibold uppercase tracking-wider">Dossier Logged &amp; Encrypted Dispatch Prepared</p>
+          <p id="briefing-confirmation-msg" class="text-stoneMuted leading-relaxed"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Executive Memorandum Reader & Confidentiality Modal -->
+  <div id="reader-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-charcoal border hairline rounded-2xl max-w-2xl w-full p-7 sm:p-10 shadow-2xl">
+      <div class="flex items-start justify-between pb-4 border-b hairline-subtle">
+        <div>
+          <span id="reader-tag" class="text-[10px] uppercase tracking-widestLuxury text-champagne">Memorandum</span>
+          <h3 id="reader-title" class="font-serif text-2xl sm:text-3xl text-alabaster mt-1">Title</h3>
+        </div>
+        <button type="button" id="close-reader-modal" class="p-2 rounded-lg hover:bg-obsidian text-stoneMuted hover:text-alabaster">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="reader-body" class="mt-5 space-y-4 text-sm text-stoneMuted font-light leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
+        <!-- Populated dynamically -->
+      </div>
+      <div class="mt-6 pt-4 border-t hairline-subtle flex items-center justify-between">
+        <a href="https://adnansk.ca/" target="_blank" rel="noopener noreferrer" class="text-xs text-champagne hover:underline">adnansk.ca &nearr;</a>
+        <button type="button" id="reader-briefing-btn" class="px-5 py-2.5 rounded-lg bg-champagne text-obsidian text-xs font-semibold uppercase tracking-widest">
+          Discuss With Adnan SK
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subtle Notification Toast -->
+  <div id="luxury-toast" class="fixed bottom-6 right-6 z-50 hidden bg-charcoal border hairline text-alabaster px-5 py-3.5 rounded-xl shadow-2xl text-xs tracking-wide flex items-center gap-3">
+    <span class="w-2 h-2 rounded-full bg-champagne"></span>
+    <span id="luxury-toast-msg">Added to Mandate Dossier.</span>
+  </div>
+
+  <!-- Application Data & Interactive Controllers -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

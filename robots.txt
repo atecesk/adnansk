@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adnansk.ca/sitemap.xml
